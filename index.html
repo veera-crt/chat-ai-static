@@ -500,7 +500,7 @@ async function searchDiseases(query) {
   showTypingIndicator();
 
   try {
-    const response = await fetch('http://localhost:3000/api/disease-query', {
+    const response = await fetch('https://chat-ai-server-gfgd.onrender.com', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
