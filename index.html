@@ -499,8 +499,9 @@ async function searchDiseases(query) {
   messageInput.value = '';
   showTypingIndicator();
 
+
   try {
-    const response = await fetch('https://chat-ai-server-gfgd.onrender.com', {
+    const response = await fetch('https://chat-ai-server-gfgd.onrender.com/api/disease-query', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
